@@ -1,0 +1,61 @@
+/* General body and layout styles */
+body {
+    background: #333;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Clock container styles */
+.clock {
+    width: 20rem;
+    height: 20rem;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: relative;
+    padding: 2rem;
+    background-image: url('Marble-Texture-011.jpg');
+    background-repeat: no-repeat;
+    background-position: 10% 5%;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Dial (center part where hands rotate) */
+.dial {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: translateY(-3px);
+}
+
+/* Hand styles for hour, minute, and second */
+.hand {
+    width: 50%;
+    height: 6px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}
+
+/* Hour hand customizations */
+.hour {
+    width: 40%;
+    left: 10%;
+}
+
+/* Minute hand customizations */
+.minute {
+    width: 45%;
+    left: 5%;
+}
+
+/* Second hand customizations */
+.second {
+    height: 4px;
+    background: red;  /* Make seconds hand distinct */
+}
